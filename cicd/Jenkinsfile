@@ -23,10 +23,10 @@ pipeline {
         EC2StackName    = 'LinuxMachineDeploy'
         EC2Template     = 'LinuxMachineDeploy.yaml'
         InstanceType    = 't2.micro'
-        SecurityGroupID = 'sg-038d0cf85f1b73c0d'
+        SecurityGroupID = 'sg-0bd2e12da298f1d0d'
         InstanceCount   = 3
         SecurityPorts   = '[22,443,3000,8080,9100]' //SSH, HTTPS, grafana, cadvisor, node-exporter
-        JenkinsServer   = 'cicd.willido.net'
+        JenkinsServer   = '35.226.253.58:8080'
 
     }
     // Test passed on a Jenkins server installed on VM
