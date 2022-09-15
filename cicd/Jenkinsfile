@@ -14,16 +14,16 @@ pipeline {
         ansiColor('xterm')
     }
     environment {
-        AWS_CRED        = 'AWS_Will' //Change to yours
-        OwnerEmail      = 'william@gmail.com' //Change to yours
-        S3BucketName    = 'william-jr8-wk8' //Change to yours, used to save cfn yml files larger than 50KB
+       AWS_CRED        = 'AWS-Sylvon' //Change to yours
+        OwnerEmail      = 'jcezz137@gmail.com' //Change to yours
+        S3BucketName    = 'sylvon-jr8-wk8' //Change to yours, used to save cfn yml files larger than 50KB
         AWS_REGION      = 'ap-southeast-2'
         VPCStackName    = 'VPCALBStack'
         VPCTemplate     = 'vpc-alb-app-db.yaml'
         EC2StackName    = 'LinuxMachineDeploy'
         EC2Template     = 'LinuxMachineDeploy.yaml'
         InstanceType    = 't2.micro'
-        SecurityGroupID = 'sg-da83229f'
+        SecurityGroupID = 'sg-038d0cf85f1b73c0d'
         InstanceCount   = 3
         SecurityPorts   = '[22,443,3000,8080,9100]' //SSH, HTTPS, grafana, cadvisor, node-exporter
         JenkinsServer   = 'cicd.willido.net'
